@@ -59,6 +59,26 @@
               {
                   'name': 'Chennai',
                   'country': 'India'
+              },
+              {
+                  'name': 'New york',
+                  'country': 'United States of America'
+              },
+              {
+                  'name': 'Melbourne',
+                  'country': 'Australia'
+              },
+              {
+                  'name': 'Bangalore',
+                  'country': 'India'
+              },
+              {
+                  'name': 'Bay Area',
+                  'country': 'United States of America'
+              },
+              {
+                  'name': 'Lucknow',
+                  'country': 'India'
               }
             ];
 
