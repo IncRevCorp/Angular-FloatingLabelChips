@@ -2657,7 +2657,6 @@ md-autocomplete {
   md-autocomplete[disabled] input {
     cursor: not-allowed; }
   md-autocomplete[md-floating-label] {
-    padding-bottom: 26px;
     border-radius: 0;
     background: transparent;
     height: auto; }
@@ -3359,7 +3358,7 @@ md-content {
 
 .md-contact-chips-suggestions li {
   height: 100%; }
-
+  md-chips .md-chips  { margin:5px 2px}
 .md-chips {
   display: block;
   font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;
@@ -3413,7 +3412,7 @@ md-content {
     display: block;
     line-height: 32px;
     margin: 8px 8px 0 0;
-    padding: 0 8px 0 12px;
+    padding: 0 8px 0 0px;
     float: left; }
     .md-chips .md-chip-input-container input:not([type]), .md-chips .md-chip-input-container input[type="email"], .md-chips .md-chip-input-container input[type="number"], .md-chips .md-chip-input-container input[type="tel"], .md-chips .md-chip-input-container input[type="url"], .md-chips .md-chip-input-container input[type="text"] {
       border: 0;
@@ -3449,7 +3448,14 @@ md-content {
       border-width: 0; }
   .md-chips md-autocomplete button {
     display: none; }
+   .md-chips .md-chip-input-container md-autocomplete input {
+      position: relative; border:0px !Important;margin-left:0px !important;}
+	   .md-chips .md-chip-input-container md-autocomplete input:focus {
+      position: relative;margin-left:0px !important;}
 
+  .md-chips md-autocomplete md-input-container label:not(.md-no-float),.md-chips md-autocomplete md-input-container .md-placeholder:not(.md-select-label) { margin-top: -23px; }
+	 .md-chips md-autocomplete md-input-container .md-input { border-width: 0; }
+	 .md-chips md-autocomplete md-input-container.md-input-focused .md-input,.md-chips md-autocomplete md-input-container .md-input.ng-invalid.ng-dirty { border-width: 0; }
 @media screen and (-ms-high-contrast: active) {
   .md-chip-input-container, md-chip {
     border: 1px solid #fff; }
