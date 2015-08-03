@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title></title>
     <!-- Angular Material CSS now available via Google CDN; version 0.10 used here -->
-    <link href="css/angular-material.css" rel="stylesheet" />
+    <link href="https://material.angularjs.org/latest/angular-material.css" rel="stylesheet" />
     <style>
         .chipsdemoCustomInputs md-content.autocomplete {
             min-height: 200px;
@@ -41,18 +41,18 @@
     </style>
 </head>
 <body style="font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;">
-    <div ng-controller="CustomInputDemoCtrl as ctrl" layout="column" class="chipsdemoCustomInputs" ng-app="MyCustomApp">
+    <div ng-controller="InputDemoCtrl as ctrl" layout="column" class="chipsdemoCustomInputs" ng-app="MyApp">
         <md-toolbar class="md-theme-light">
               <h2 class="md-toolbar-tools">
-                  <span>md-chips Autocomplete with Floating Label</span>
-                  <a href="withIssues.html" target="_self" style="color: white; float:right; vertical-align:middle; margin:auto 10px; position:absolute; right:10px; top:20px; font-size: 12px; font-weight: normal;">md-chips with Default Options</a>
+                  <span>md-chips Autocomplete with Default option</span>
+                  <a href="index.html" target="_self" style="color: white; float:right; vertical-align:middle; margin:auto 10px; position:absolute; right:10px; top:20px; font-size: 12px; font-weight: normal;">md-chips with Floating label Option</a>
               </h2>
         </md-toolbar>
         <md-content class="md-padding" layout="column">
         <br>
         <h2 class="md-title">Using <code>md-autocomplete</code> with <code>md-chips</code>  to build an ordered set of chips.</h2>
         <md-chips ng-model="ctrl.selectedCities" md-autocomplete-snap="" md-require-match="">     
-             <md-autocomplete md-selected-item="ctrl.selectedItem" md-search-text="ctrl.searchText" md-items="item in ctrl.querySearch(ctrl.searchText)" md-item-text="item.name" md-floating-label="Search for a city">
+             <md-autocomplete md-selected-item="ctrl.selectedItem" md-search-text="ctrl.searchText" md-items="item in ctrl.querySearch(ctrl.searchText)" md-item-text="item.name" placeholder="Search for a city">
                   <span md-highlight-text="ctrl.searchText">{{item.name}} :: {{item.country}}</span>
              </md-autocomplete>
              <md-chip-template>
@@ -76,13 +76,13 @@
       </md-content>
         <div layout layout-sm="column">
             <md-input-container flex>
-          <label>First name</label>
-          <input ng-model="user.firstName">
-        </md-input-container>
-            <md-input-container flex>
-          <label>Last Name</label>
-          <input ng-model="theMax">
-        </md-input-container>
+               <label>First name</label>
+               <input ng-model="user.firstName">
+           </md-input-container>
+           <md-input-container flex>
+              <label>Last Name</label>
+              <input ng-model="theMax">
+           </md-input-container>
         </div>
     </div>
 
@@ -90,8 +90,8 @@
     <script src="js/angular.min.js"></script>
     <script src="js/angular-animate.min.js"></script>
     <script src="js/angular-aria.min.js"></script>
-    <!-- Customised Angular Material Javascript used here -->
-    <script src="js/angular-material.js"></script>
+    <!-- Angular Material Javascript now available via Google CDN; version 0.10 used here -->
+    <script src="https://material.angularjs.org/latest/angular-material.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
